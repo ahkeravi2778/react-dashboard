@@ -15,13 +15,11 @@ import { BrowserRouter , Routes, Route} from "react-router-dom";
 function App() {
   return (
     <BrowserRouter >
-  
     <Headernav />
     <Sidebar />
     <Routes>
-   
     <Route exact path="/" element={ <Home />} />
-    <Route exact path="/dashboard" element={ <Main />} />
+    <Route exact path="/dashboard" element={  <Main />} />
     <Route exact path="/blog" element={ <Blog />} />
     <Route exact path="/contact" element={ <Contact />} />
     <Route exact path="/user" element={ <User />} />
