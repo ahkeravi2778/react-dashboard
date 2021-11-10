@@ -7,10 +7,7 @@ function User() {
         <div className="site-layout-background" style={{ padding: 24, textAlign: 'center' }}>
           <h1>User</h1>
           <h1>User</h1>
-          <h1>User</h1>
-          <h1>User</h1>
-          <h1>User</h1>
-          <h1>User</h1>
+          
         </div>
       </Content>
         </div>

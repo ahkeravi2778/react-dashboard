@@ -18,6 +18,7 @@ function App() {
     <Headernav />
     <Sidebar />
     <Routes>
+   
     <Route exact path="/" element={ <Main />} />
     <Route exact path="/blog" element={ <Blog />} />
     <Route exact path="/contact" element={ <Contact />} />

@@ -40,34 +40,18 @@ class Sidebar extends Component {
       <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
         <Menu.Item key="1" icon={<UserOutlined />}>
          <Link to='/'> Dashboard</Link>
-          
-        </Menu.Item>
-        <Menu.Item key="2" icon={<VideoCameraOutlined />}>
-        <Link to='/user'> User</Link>
-        </Menu.Item>
-        <Menu.Item key="3" icon={<UploadOutlined />}>
-        <Link to='/blog'> Blog</Link>
-        </Menu.Item>
-        <Menu.Item key="4" icon={<BarChartOutlined />}>
-          nav 4
-        </Menu.Item>
-        <Menu.Item key="5" icon={<CloudOutlined />}>
-          nav 5
-        </Menu.Item>
-        <Menu.Item key="6" icon={<AppstoreOutlined />}>
-          nav 6
-        </Menu.Item>
-        <Menu.Item key="7" icon={<TeamOutlined />}>
-          nav 7
-        </Menu.Item>
-        <Menu.Item key="8" icon={<ShopOutlined />}>
-          nav 8
         </Menu.Item>
         <SubMenu key="sub1" icon={<UserOutlined />} title="User">
-              <Menu.Item key="31">Tom</Menu.Item>
-              <Menu.Item key="32">Bill</Menu.Item>
-              <Menu.Item key="33">Alex</Menu.Item>
-            </SubMenu>
+              <Menu.Item key="31"><Link to='/user'> List</Link></Menu.Item>
+              <Menu.Item key="32"><Link to='/newuser'> Add</Link></Menu.Item>
+        </SubMenu>
+        <SubMenu key="sub2" icon={<UserOutlined />} title="Blog">
+              <Menu.Item key="41"><Link to='/blog'>Blog List</Link></Menu.Item>
+              <Menu.Item key="42"><Link to='/new'> New Blog</Link></Menu.Item>
+        </SubMenu>
+        <Menu.Item key="4" icon={<BarChartOutlined />}>
+        <Link to='/contact'> Contact</Link>
+        </Menu.Item>
       </Menu>
     </Sider>
     );
