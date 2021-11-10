@@ -34,7 +34,7 @@ class Sidebar extends Component {
      
       <Menu theme="dark" mode="inline" >
         <Menu.Item key="1" icon={<UserOutlined />}>
-         <Link to='/'> Dashboard</Link>
+         <Link to='/dashboard'> Dashboard</Link>
         </Menu.Item>
         <SubMenu key="sub1" icon={<UserOutlined />} title="User">
               <Menu.Item key="31"><Link to='/user'> List</Link></Menu.Item>
@@ -44,7 +44,7 @@ class Sidebar extends Component {
               <Menu.Item key="41"><Link to='/blog'>Blog List</Link></Menu.Item>
               <Menu.Item key="42"><Link to='/new'> New Blog</Link></Menu.Item>
         </SubMenu>
-        <SubMenu key="sub3" icon={<UserOutlined />} title="Product">
+        <SubMenu key="sub3" icon={<UserOutlined />} title="Products">
               <Menu.Item key="51"><Link to='/product'>Product List</Link></Menu.Item>
               <Menu.Item key="52"><Link to='/productnew'> New Product</Link></Menu.Item>
         </SubMenu>

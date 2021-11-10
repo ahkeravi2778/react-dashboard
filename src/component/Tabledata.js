@@ -1,5 +1,8 @@
 import { Table, Tag, Space } from 'antd';
-import { Link } from 'react-router-dom';
+import { Modal, Button } from 'antd';
+import { ExclamationCircleOutlined, DeleteOutlined } from '@ant-design/icons';
+
+const { confirm } = Modal;
 const { Column } = Table;
 
 const data = [
@@ -42,6 +45,20 @@ const data = [
 
   
 function Tabledata() {
+  function showPromiseConfirm() {
+    confirm({
+      centered : true,
+      title: 'Do you want to delete these items?',
+      icon: <ExclamationCircleOutlined />,
+      content: 'When clicked the OK button, this dialog will be closed after 1 second',
+      onOk() {
+        return new Promise((resolve, reject) => {
+          setTimeout(Math.random() > 0.5 ? resolve : reject, 1000);
+        }).catch(() => console.log('Oops errors!'));
+      },
+      onCancel() {},
+    });
+  }
   return ( 
   <Table dataSource={data}>
    <Column title="Name" dataIndex="name" key="name" />
@@ -66,8 +83,8 @@ function Tabledata() {
     key="action"
     render={(text, record) => (
       <Space size="middle">
-        <Link to='/'> Invite {record.lastName}</Link>
-        <Link to='/'> Delete</Link>
+        <Button onClick={showPromiseConfirm} type="danger" shape="circle" icon={<DeleteOutlined />} />
+        
       </Space>
     )}
   />

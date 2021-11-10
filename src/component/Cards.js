@@ -1,8 +1,11 @@
 import React from 'react'
-import { Card,Avatar  } from 'antd';
+import { Card, Avatar  } from 'antd';
 import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
 const { Meta } = Card;
 function Cards(props) {
+  function deleteClick() {
+    console.log('dlete');
+  }
     return (
         <Card  
         id={props.id}
@@ -14,7 +17,7 @@ function Cards(props) {
           />
         }
         actions={[
-          <SettingOutlined key="setting" />,
+          <SettingOutlined key="setting" onClick={deleteClick} />,
           <EditOutlined key="edit" />,
           <EllipsisOutlined key="ellipsis" />,
         ]}

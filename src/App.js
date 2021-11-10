@@ -5,6 +5,7 @@ import User from './pages/User'
 import Contact from './pages/Contact'
 import Main from './pages/Main'
 import Product from './pages/Product'
+import Home from './front-end/Home'
 import './index.css';
 import 'antd/dist/antd.css';
 
@@ -19,7 +20,8 @@ function App() {
     <Sidebar />
     <Routes>
    
-    <Route exact path="/" element={ <Main />} />
+    <Route exact path="/" element={ <Home />} />
+    <Route exact path="/dashboard" element={ <Main />} />
     <Route exact path="/blog" element={ <Blog />} />
     <Route exact path="/contact" element={ <Contact />} />
     <Route exact path="/user" element={ <User />} />
