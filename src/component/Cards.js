@@ -4,8 +4,9 @@ import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/ico
 const { Meta } = Card;
 function Cards(props) {
     return (
-        <Card
-        style={{ width: 300 }}
+        <Card  
+        id={props.id}
+        hoverable
         cover={
           <img
             alt="example"
@@ -21,6 +22,7 @@ function Cards(props) {
         <Meta
           avatar={<Avatar src="https://joeschmoe.io/api/v1/random" />}
           title={props.title}
+          
           description="This is the description"
         />
       </Card>

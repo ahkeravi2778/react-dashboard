@@ -16,13 +16,21 @@ function Blog() {
     {
       "id": 3,
       "title": "Post 3"
+    },
+    {
+      "id": 4,
+      "title": "Post 4"
+    },
+    {
+      "id": 5,
+      "title": "Post 5"
     }
   ];
 
     return (
         <div>
        
-        <Content style={{ width:'85%', padding: '60px 0px 0px 0px' , margin: '24px 16px 0px 200px', overflow: 'initial' }}>
+        <Content style={{  margin: '24px 16px 0px 200px', overflow: 'initial' }}>
         <Breadcrumb>
     <Breadcrumb.Item>React Dashboard</Breadcrumb.Item>
     <Breadcrumb.Item>
@@ -32,11 +40,11 @@ function Blog() {
   </Breadcrumb>
         <div className="site-layout-background" style={{ padding: 24, textAlign: 'center' }}>
           <h1>Blog</h1>
-          <Row justify="space-between">
+          <Row  gutter={[8, 16]}>
           {
             blogs.map((blog) => 
-            <Col span={6}>
-            <Cards title={blog.title} />
+            <Col key={blog.id} span={6}>
+            <Cards  title={blog.title} />
             </Col>
             ) 
           }

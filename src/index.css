@@ -19,3 +19,14 @@
 .site-layout .site-layout-background {
   background: #fff;
 }
+
+
+main.ant-layout-content {
+  background: #cfcfcf6b;
+  margin-right: 0px!important;
+  padding-top: 25px;
+  min-height: 800px  ;
+}
+.logo {
+  text-align: center;
+}
