@@ -10,8 +10,6 @@ import './index.css';
 import 'antd/dist/antd.css';
 
 import { BrowserRouter , Routes, Route} from "react-router-dom";
-
-
 function App() {
   return (
     <BrowserRouter >
