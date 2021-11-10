@@ -2,7 +2,7 @@ import React from 'react'
 import { Content } from 'antd/lib/layout/layout'
 import Cards from '../component/Cards'
 import { Breadcrumb ,Row, Col } from 'antd';
-
+import { Link } from 'react-router-dom';
 function Blog() {
   const blogs = [
     {
@@ -24,14 +24,11 @@ function Blog() {
        
         <Content style={{ width:'85%', padding: '60px 0px 0px 0px' , margin: '24px 16px 0px 200px', overflow: 'initial' }}>
         <Breadcrumb>
-    <Breadcrumb.Item>Ant Design</Breadcrumb.Item>
+    <Breadcrumb.Item>React Dashboard</Breadcrumb.Item>
     <Breadcrumb.Item>
-      <a href="">Component</a>
+      <Link to='/blog'> Blog </Link>
     </Breadcrumb.Item>
-    <Breadcrumb.Item >
-      <a href="">General</a>
-    </Breadcrumb.Item>
-    <Breadcrumb.Item>Button</Breadcrumb.Item>
+  
   </Breadcrumb>
         <div className="site-layout-background" style={{ padding: 24, textAlign: 'center' }}>
           <h1>Blog</h1>

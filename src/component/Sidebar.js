@@ -1,18 +1,13 @@
 import React , {Component} from 'react';
-import { Layout, Menu, Button } from 'antd';
+import { Layout, Menu } from 'antd';
 import {
-  AppstoreOutlined,
+
   BarChartOutlined,
-  CloudOutlined,
-  ShopOutlined,
-  TeamOutlined,
   UserOutlined,
-  UploadOutlined,
-  VideoCameraOutlined,
 } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 const { SubMenu } = Menu;
-const { Header, Content, Footer, Sider } = Layout;
+const { Sider } = Layout;
 
 class Sidebar extends Component {
   state = {

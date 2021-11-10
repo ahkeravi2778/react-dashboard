@@ -1,6 +1,5 @@
 import Sidebar from './component/Sidebar';
 import Headernav from './component/Headernav';
-import Contentsection from './component/Contentsection';
 import Blog from './pages/Blog'
 import User from './pages/User'
 import Contact from './pages/Contact'
@@ -8,7 +7,7 @@ import Main from './pages/Main'
 import './index.css';
 import 'antd/dist/antd.css';
 import { Layout } from 'antd';
-import { BrowserRouter , Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter , Routes, Route} from "react-router-dom";
 
 
 function App() {

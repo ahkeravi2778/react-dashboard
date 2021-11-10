@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Col, Row,Avatar  } from 'antd';
+import { Card,Avatar  } from 'antd';
 import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
 const { Meta } = Card;
 function Cards(props) {
